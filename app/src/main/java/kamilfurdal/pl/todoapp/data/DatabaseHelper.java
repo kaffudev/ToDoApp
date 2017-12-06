@@ -11,12 +11,15 @@ import kamilfurdal.pl.todoapp.data.TodosContract.TodosEntry;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "todosapp.db";
+
     private static final int DATABASE_VERSION = 1;
+
     private static final String TABLE_CATEGORIES_CREATE=
             "CREATE TABLE " + CategoriesEntry.TABLE_NAME + " (" +
                     CategoriesEntry._ID + " INTEGER PRIMARY KEY, " +
                     CategoriesEntry.COLUMN_DESCRIPTION + " TEXT " +
                     ")";
+
     private static final String TABLE_TODOS_CREATE =
             "CREATE TABLE " + TodosEntry.TABLE_NAME + " (" +
                     TodosEntry._ID + " INTEGER PRIMARY KEY, " +
@@ -30,8 +33,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     "(" + CategoriesEntry._ID +") " + ")";
 
 
-
     public DatabaseHelper(Context context) {
+
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
