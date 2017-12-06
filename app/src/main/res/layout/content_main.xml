@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:weightSum="1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="kamilfurdal.pl.todoapp.ToDoListActivity"
+    tools:context="kamilfurdal.pl.todoapp.TodoListActivity"
     tools:showIn="@layout/activity_main">
 
     <Spinner

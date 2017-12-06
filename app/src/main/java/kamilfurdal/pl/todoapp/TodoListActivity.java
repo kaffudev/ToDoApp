@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-public class ToDoListActivity extends AppCompatActivity {
+public class TodoListActivity extends AppCompatActivity {
 
     String[] itemname ={
             "Make shopping",
@@ -41,7 +41,7 @@ public class ToDoListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
 
-                Intent intent = new Intent(ToDoListActivity.this, ToDoActivity.class);
+                Intent intent = new Intent(TodoListActivity.this, TodoActivity.class);
                 String content= (String) listView.getItemAtPosition(pos);
                 intent.putExtra("Content", content);
                 startActivity(intent);
